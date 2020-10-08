@@ -1,0 +1,37 @@
+public class DataType {
+    // Case Insensitive
+	//Integer
+    Integer barrelNumbers = 1000;
+	System.debug('value of barrelNumbers variable: '+barrelNumbers);
+   
+    //boolean && String
+    boolean isRaining = false;
+	String msg='Today is raining ? '+((isRaining? 'yes':'no'));
+	System.debug(msg);
+    
+    //Date
+    Date startDate = Date.newInstance(2020, 1, 12);
+    System.debug('Start Date '+startDate);
+    Date today = Date.today();
+    
+    Time myTime = Time.newInstance(18, 36, 12, 12);
+    
+    //Integer 32 Bit Range-> 1)Long 64 Bit Range
+    //Decimal-> 1)Double 64Bit decimal number
+    
+    //Enum
+    public enum Season{WINTER, SPRING, SUMMER, FALL}
+    Season s = Season.SUMMER;
+    
+    if(s==Season.WINTER){
+        System.debug('its winter');
+    }
+    
+    //List 
+    	//Similar Kind of elements, And we may have Duplicate element also.
+    	// syntax List<Generic type> listName = new List<Generic Type>();
+    	// listName.add('Mark');
+    	// listName.add('Roy');
+    	// 
+    
+}
